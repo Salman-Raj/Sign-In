@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign</h1>
+        <div class="sign-in-container">
+            <p>Name</p>
+            <input type="text" name="" id="" value="" />
+            <p>Password</p>
+            <input type="password" name="" id="" value="" />
+            <div>
+                <button type="submit" onClick="signIn()">Sign In</button>
+                <p class="verify-text"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let inputEl = document.querySelector("input");
+let signInText = document.querySelector(".verify-text");
+
+function signIn() {
+    let inputValue = inputEl.value;
+    let verifyText = "Hi " + inputValue + ", Verifying your Account...";
+    signInText.textContent = verifyText;
+}
+    </script>
+</body>
+
+</html>
